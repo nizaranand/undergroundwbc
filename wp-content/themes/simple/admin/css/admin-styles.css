@@ -1,0 +1,116 @@
+/* GENERAL----------------------------------------------------------------*/
+
+.header-description{
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+	padding: 20px 30px;
+	margin: 15px 0px;
+	width: 700px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ansimuz-table{
+	width: 700px;
+	border-collapse:separate;
+	border-spacing:0;
+	margin-bottom:28px;
+	text-align: left;
+}
+
+.ansimuz-table  td,
+.ansimuz-table  th {
+	vertical-align: middle;
+	border-bottom: 1px solid #ccc;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.ansimuz-table th{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.ansimuz-table .right{
+	display: block;
+	float: right;
+	max-width: 300px;
+}
+
+.ansimuz-table p{
+	margin-bottom: 18px;
+}
+
+/* SLIDER MANAGER ----------------------------------------------------------------*/
+
+#manager_form_wrap .slide,
+#manager_form_wrap_social .slide{
+	display: block;
+	overflow: hidden;
+	width: 700px;
+	padding: 10px;
+	background: #eaeaea;
+	margin-bottom: 20px;
+	border: solid 1px #ccc;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#manager_form_wrap .slide input,
+#manager_form_wrap .slide textarea,
+#manager_form_wrap .slide select,
+#manager_form_wrap_social .slide input,
+#manager_form_wrap_social .slide textarea,
+#manager_form_wrap_social .slide select{
+	display: block;
+	width: 690px;
+	padding: 6px 8px;
+	border: none;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #606060;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#manager_form_wrap .slide input.check{
+	display: inline;
+	width: 15px;
+	padding: 6px 8px;
+	margin-bottom: 0px;
+}
+
+#manager_form_wrap .slide .remove_slide{
+	float: right;
+}
+
+#manager_form_wrap .slide label,
+#manager_form_wrap_social .slide label{
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #505050;
+	padding-bottom: 5px;
+}
+
+.slide-highlight{
+	display: block;
+	width: 700px;
+	padding: 10px;
+	height: 200px;
+	background: #f1f1f1;
+	border: dashed 2px #ccc;
+	margin-bottom: 15px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}

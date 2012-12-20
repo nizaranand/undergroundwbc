@@ -1,0 +1,33 @@
+body {
+	color: #49494b;
+	background: #ffffff;
+}
+
+/* TITLE ------------------------------------------------------------*/
+
+.title-holder{
+	background: url(../img/title-bg-white.png) no-repeat ;
+}
+
+/* SLIDESHOW ------------------------------------------------------------*/
+
+#slideshow{
+	background: url(../img/slideshow-bg-white.png) no-repeat;
+}
+
+/* SOCIAL BAR ------------------------------------------------------------*/
+
+#social-bar{
+	background: url(../img/social-bg-white.png) no-repeat;
+}
+
+/* BORDERS ------------------------------------------------------------*/
+
+#header,
+#home-header{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#footer{
+	border-top: 1px solid #FFFFFF;
+}

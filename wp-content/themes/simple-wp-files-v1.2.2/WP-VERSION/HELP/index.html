@@ -1,0 +1,558 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	.style1 {
+	color: #990000;
+	font-weight: bold;
+}
+    </style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;simple&rdquo; Documentation by &ldquo;ansimuz
+	    v1.0</h3>
+		
+	  <hr>
+		
+		<h1 class="center">&ldquo;SIMPLE WORDPRESS THEME&rdquo;</h1>
+		
+  <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top"><strong>Created: 10/21/2010<br>
+By: Luis Zuno aka ansimuz<br>
+Email: <a href="mailto:youremail@yourdomain.com">luis@luiszuno.com</a> </strong></p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you
+				  have any questions that are beyond the scope of this help file, please
+				  feel free to email via my user page contact form <a href="http://themeforest.net/user/ansimuz?ref=ansimuz">here</a>.
+			    Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">About The Theme</a></li>
+			<li><a href="#install">Installation</a></li>
+			<li><a href="#configuration">Configuration</a></li>
+			<li><a href="#homePage">Setting Up the home page</a></li>
+			<li><a href="#regularPage">Setting Up a Regular Page</a></li>
+			<li><a href="#contactPage">Setting Up The Contact Page</a></li>
+			<li><a href="#galleryPage">Setting Up a Gallery Page</a></li>
+			<li><a href="#videoPage">Setting Up a Video Gallery Page</a></li>
+			<li><a href="#portfolio">Setting Up the Portfolio</a></li>
+			<li><a href="#portfolio">Setting Up the Archives</a></li>
+			<li><a href="shortcodes.html">Shortcodes</a></li>
+		  <li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		    <li><a href="http://themeforest.net/item/simple-wordpress/faq/160159?ref=ansimuz" target="_blank">FAQ</a></li>
+		    <li><a href="http://luiszuno.com/forums/">SUPPORT FORUMS</a></li>
+	  </ol>
+		
+<hr>
+		
+		<h1 id="htmlStructure"><strong>A) About The Theme</strong> - <a href="#toc">top</a></h1>
+	  <p>This theme is	designed for use with WordPress 3.0 or Higher. I suggest
+		  to update your wordpress installation before installing this theme.</p>
+		<p>This theme has a ready menu panel in the admin called simple where you
+		  can set the skins and other settings explained later in this document.</p>
+		<p>You will need to download and activate the<a href="http://wordpress.org/extend/plugins/nextgen-gallery/" target="_blank"> nextGen
+	    gallery plugin</a> from Alex Rabe its free but you could always donate to
+	    contribute its development.</p>
+		<p>This theme is widget ready you can add widgets to the sidebar and also to
+		  the footer, i recomend to configure the css files if a widget is displaying
+		  wrong.</p>
+	    <hr>
+        <p>&nbsp;</p>
+        <h1 id="install"><strong>B) Installation</strong> - <a href="#toc">top</a></h1>
+      <p>You can either way:</p>
+		<h2>1) Use the WordPress Theme upload</h2>
+<ol>
+          <li>Login to your wp-admin</li>
+		  <li>In the <strong>Appearance</strong> menu click on the <strong>Add New
+		      Themes</strong></li>
+	      <li>At the top of the page click upload and browse for the theme zipped.</li>
+	      <li>Click in the Appeareance&gt;Themes tab in the admin sidebar and activate
+          the theme.</li>
+	  </ol>
+		<p>&nbsp;</p>
+		<h2>2) Upload by FTP</h2>
+<ol>
+		  <li> Go to the themes directory in your server with an ftp client. It should
+		    be in: <br>
+	      <strong>your_wordpresss_directory/wp-content/themes</strong></li>
+	      <li>Upload the <strong>simple</strong> folder to the <strong>themes</strong> directory
+		  in your server.</li>
+	      <li>When upload is complete login to your wp-admin and click
+	        in the Appeareance&gt;Themes tab in the admin sidebar and activate the
+	        theme.</li>
+      </ol>
+		<p><span class="style1">Important</span>. You need to have 2 pages defined
+		  for this theme to the front page to work. </p>
+		<p>You will need a <strong>home</strong> page
+		  and a <strong>blog</strong> page
+		  follow these instructions to have them ready:</p>
+		<ol>
+		  <li>Login to your wp-admin.</li>
+          <li>Create two WordPress Pages from the &quot;Add New Page&quot; panel.</li>
+	      <li>Title one as &quot;Home&quot; as your &quot;static&quot; front
+          page.</li>
+	      <li>Set the &quot;Front&quot; template to the default template.</li>
+	      <li>Publish the Page.</li>
+	      <li>Title the second one as &quot;Blog&quot; This page will be a place-holder
+          for showing the Posts on your site.</li>
+	      <li>Do not use a custom Page template for this page!</li>
+	      <li>Publish the Page.</li>
+	      <li>Go to Administration &gt; Settings &gt; Reading panel.</li>
+	      <li>Set which page will be designated the &quot;front&quot; page. Choose
+	        from display your latest blog posts on the &quot;Blog&quot; Page and &quot;static
+          page&quot; for the &quot;Home&quot; Page.</li>
+	      <li>Enable &quot;Permalinks&quot; to show the &quot;page title&quot; in
+	        the address, since /index.php?p=423 defeats the purpose of making
+	        a static front page.</li>
+	      <li>Save changes.</li>
+	  </ol>
+		<p>Read the official <strong>WordPress</strong> instructions <a href="http://codex.wordpress.org/Creating_a_Static_Front_Page" target="_blank">here</a>.</p>
+		<hr>
+		<h4>&nbsp;</h4>
+		<h1 id="configuration"><strong>C) Configuration </strong>- <a href="#toc">top</a></h1>
+	  <p>Once installed a new panel named simple will appear in the sidebar of
+		  the admin panel of your WordPress. </p>
+	  <p>If you want to feed your newly installed wordpress site to look like the one in the preview you can import the xml file (wordpress.feed.xml.) included in the into the tools&gt;import tab in the wp-admin.</p>
+	  <p>Simple wp-admin settings:</p>
+	  <h2>General Settings Options</h2>
+		<ul>
+		  <li>Search box visibility</li>
+	      <li>Toggle recent comments display at the sidebar</li>
+	      <li>Text labels</li>
+	      <li>Page 404 content</li>
+	      <li>Footer bottom text content</li>
+      </ul>
+      <h2>Appearance Options</h2>
+        <ul>
+          <li>Header/Footer BG degree</li>
+          <li>Logo settings</li>
+          <li>Text/Face settings</li>
+          <li>BG options</li>
+        </ul>
+      <h2>Front Page Options</h2>
+	    <ul>
+          <li>Headline text</li>
+	      <li>Front page thumbnail options</li>
+          <li>Columns options</li>
+	    </ul>
+      <h2>Slideshow Options</h2>
+        <ul>
+          <li>Toggle slideshow visibility</li>
+          <li>Choose the transition effect</li>
+          <li>Set the Transition speed</li>
+          <li>Set the Tansition delay</li>
+          <li>Specify the urls and links of the slides</li>
+        </ul>
+        <h2>Gallery Options</h2>
+        <ul>
+          <li>Toggle display visibility</li>
+          <li>Toggle visibility of the bottom text for the thumbnails</li>
+        </ul>
+        <h2>Social Options</h2>
+        <ul>
+          <li>Twitter options</li>
+          <li>Follow us links and label</li>
+        </ul>
+        <h2>Portfolio Options</h2>
+        <ul>
+          <li>Twitter options</li>
+          <li>Follow us links and label</li>
+        </ul>
+      <h2>Contact Options</h2>
+        <ul>
+          <li>Set any number of recipient emails separated by commas</li>
+          <li>Set the subject for the email</li>
+          <li>Set the text beneath the contact form</li>
+          <li>Change the thanks message</li>
+          <li>Set the url image for the map display</li>
+          <li>Set the text for the contact address</li>
+      </ul>
+        <h2>Staff Options</h2>
+        <ul>
+          <li>Info and image settings</li>
+      </ul>
+      <h2>WP menu</h2>
+      <p>This theme supports &quot;wp-menu&quot; wich is an option to customize your
+          own menu by adding links, pages or categories in any order. Don't worry
+          if you dont define a &quot;wp-menu&quot; the theme will display a &quot;regular menu&quot;
+          by default.</p>
+        <p>To set your wp-menu ready go to the &quot;menu&quot; tab under the &quot;Appeareance&quot;
+          tab in the admin panel. then create the custom menu by addin one menu
+          in the right panel, just write the name for your menu then press create
+          menu. Then under Theme locations to the left select your newly created
+          menu from the combo box and finally add items to your menu.</p>
+        <p>Official source <a href="http://codex.wordpress.org/Appearance_Menus_SubPanel">here</a></p>
+        <p><img src="assets/images/wp-menu.png" width="770" height="630"></p>
+      <h3>&nbsp;</h3>
+	  <h2>Trigger the tooltips</h2>
+	  <p> Add an image set the title text in the &quot;Edit Image Title&quot;.</p>
+		<p><img src="assets/images/tool-text.png" width="672" height="401"></p>
+		<p> then click on advanced settings and in the &quot;CSS CLASS&quot; input type &quot;tool&quot;.</p>
+		<p><img src="assets/images/tool.png" width="669" height="486"></p>
+		<p> It will display the title of the image when rollover on it.</p>
+		<p><strong>There a four different positions for the tooltip</strong></p>
+		<ol>
+		  <li>tool</li>
+	      <li>tool-right</li>
+	      <li>tool-bottom</li>
+	      <li>tool-left</li>
+	  </ol>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+		
+        <h1 id="homePage"><strong>D) Setting Up the Home Page</strong> - <a href="#toc">top</a></h1>
+        <p>You will need a <strong>home</strong> page
+          and a <strong>blog</strong> page
+          follow these instructions to have them ready:</p>
+        <ol>
+          <li>Login to your wp-admin.</li>
+          <li>Create two WordPress Pages from the &quot;Add New Page&quot; panel.</li>
+          <li>Title one as &quot;Home&quot; as your &quot;static&quot; front
+            page.</li>
+          <li>Set the &quot;Front&quot; template to the default template.</li>
+          <li>Publish the Page.</li>
+          <li>Title the second one as &quot;Blog&quot; This page will be a place-holder
+            for showing the Posts on your site.</li>
+          <li>Do not use a custom Page template for this page!</li>
+          <li>Publish the Page.</li>
+          <li>Go to Administration &gt; Settings &gt; Reading panel.</li>
+          <li>Set which page will be designated the &quot;front&quot; page. Choose
+            from display your latest blog posts on the &quot;Blog&quot; Page and &quot;static
+            page&quot; for the &quot;Home&quot; Page.</li>
+          <li>Enable &quot;Permalinks&quot; to show the &quot;page title&quot; in
+            the address, since /index.php?p=423 defeats the purpose of making
+            a static front page.</li>
+          <li>Save changes.</li>
+        </ol>
+        <p>Read the official <strong>WordPress</strong> instructions <a href="http://codex.wordpress.org/Creating_a_Static_Front_Page" target="_blank">here</a>.</p>
+        <p>&nbsp;</p>
+    <hr>
+        <h1 id="regularPage"><strong>D) Setting Up a Regular Page</strong> - <a href="#toc">top</a></h1>
+      <p>Follow this easy steps:</p>
+        <ol>
+          <li>Add a new page.</li>
+          <li>Title whatever you want (About, History etc...)</li>
+          <li>Use the <strong>Default Template</strong> from the <strong>Template</strong> combo
+            box at the right<strong> Page Atributes</strong> panel .</li>
+          <li>Set the order the higher number will display to the left side of
+            the menu bar.</li>
+          <li>Optionally you can set a subtitle adding a custom field named <strong>subtitle</strong>.</li>
+        </ol>
+        <p>You can use shortcodes for the content of the pages like:</p>
+      <p>&nbsp;</p>
+        <hr>
+        <h1 id="contactPage"><strong>E) Setting Up a The Contact Page</strong> - <a href="#toc">top</a></h1>
+      <p>Follow this easy steps:</p>
+        <ol>
+          <li>Add a new page.</li>
+          <li>Title whatever you want </li>
+          <li>Use the <strong>Contact</strong> from the <strong>Template</strong> combo
+            box at the right<strong> Page Atributes</strong> panel.</li>
+          <li>Set the order the higher number will display to the left side of
+            the menu bar.</li>
+          <li>Optionally you can set a subtitle adding a custom field named <strong>subtitle</strong>.</li>
+          <li>You can add content however i suggest to use the contact settings
+            from the simple administration panel</li>
+        </ol>
+        <hr>
+        <h1 id="galleryPage"><strong>F) Setting Up a Gallery Page</strong> - <a href="#toc">top</a></h1>
+      <p>You need to install the nextGen plug in, configure it and finally
+          set the page here are the steps:</p>
+        <p>First you need to install and activate the <strong><a href="http://wordpress.org/extend/plugins/nextgen-gallery/">NextGen
+              Gallery</a></strong> from
+          Alex Rabe follow these steps to have it ready:</p>
+        <h2><strong>INSTALL THE NEXT GEN PLUG IN</strong></h2>
+<ol>
+          <li>Go to the plugins tab and click on the <strong>&quot;Add
+          new&quot;</strong> link</li>
+          <li>Type in <strong>&quot;NextGEN Gallery&quot;</strong> in the input
+            box and while term is selected in the combo box press <strong>&quot;Search plugins&quot;</strong></li>
+          <li>Click install now for the <strong>&quot;NextGEN Gallery&quot;</strong> results
+            (it should be the first one).</li>
+          <li>After installation is done click activate plug in or go the the
+            plugins list and activate it from there.</li>
+          <li>If you couldn't follow me here are some video links:<br>
+            <ol>
+              <li><a href="http://wordpress.org/extend/plugins/nextgen-gallery/installation/" target="_blank">NextGen
+                  Video Review</a></li>
+              <li><a href="http://www.youtube.com/watch?v=rpfNn128O-g" target="_blank">Video
+                  tutorial</a></li>
+            </ol>
+          </li>
+        </ol>
+        <h2><strong>ADD IMAGES TO YOUR GALLERY</strong></h2>
+<ol>
+          <li>Now that the nextGen plugin is activated a new panel will appear
+            to the bottom- left of the admin panel called <strong>Gallery</strong>.</li>
+          <li>First go to the <strong>Options</strong> tab from the drop down
+          Gallery tab then click on the thumbnails top navigation tab and set
+            the width and height to 224 x 150 pixels then press Save changes.<br>
+            <br>
+          <img src="assets/images/nextGen-options.png" width="500" height="372"></li>
+          <li>In the same window click on the Effects tab and  set the javascript
+          Thumbnail to Custom and in the Link Code line copy this line:<br>
+          <strong>rel=&quot;prettyPhoto[%GALLERY_NAME%]&quot;</strong><br>
+          This will activate the prettyPhoto effect, however you can use any
+          other from the list if you wish.<br>
+          <img src="assets/images/nextGen-effects.png" width="500" height="309"><br>  
+            <br>
+          </li>
+          <li>Click on the <strong>Add Gallery / Image</strong>s tab from the drop down Gallery
+            tab.</li>
+          <li>Entry a name for your gallery and then press add gallery.</li>
+          <li>Now in the top navigation click on the <strong>Upload
+          Image</strong>s tab and upload some images dont forget to choose the
+          target gallery from the combobox.<br>
+          <img src="assets/images/nextGen-upload.png" width="500" height="468"></li>
+          <li>Now click on the<strong> Manage Gallery</strong> in the left tab
+            menu and click on the name of the gallery you just created.</li>
+          <li>Here you can set the category filter
+            and the text dsiplaying below each thumbnail in the gallery. 
+            To do so follow these steps:
+            <ol>
+              <li>Entry a name in the<strong> alt &amp; title text</strong> input
+                box you will set this link later when creating the page usgin
+                a custom field named filter. E.g. If you upload 10 images and
+                entry winter in the alt box for 3 images and for the rest you
+                entry summer you can filter these images using the filter bar.</li>
+              <li>Entry the displaying text in the <strong>Description</strong> box.
+                You can toggle the visibility of this text in the general settings
+                of the simple admin tab.<br>
+                <img src="assets/images/nextGen-filter.png" width="500" height="232"><br>
+              </li>
+            </ol>
+          </li>
+          <li>Thats all you need for now lets continuing to the gallery page
+            creation.</li>
+        </ol>
+        <h2><strong>	SET THE GALLERY PAGE. <br>
+        If you have already activated	the NextGen
+          Gallery Plugin:</strong></h2>
+<ol>
+          <li>Add a new page.</li>
+          <li>Title whatever you want </li>
+          <li>Use a Gallery page<strong></strong> from the <strong>Template</strong> combo
+            box at the right<strong> Page Atributes</strong> panel you have 3
+            types of template with different number of columns.</li>
+          <li>Set the order the higher number will display to the left side of
+            the menu bar.</li>
+          <li>Optionally you can set a subtitle adding a custom field named <strong>subtitle</strong>.</li>
+          <li>A new button will appear in your toolbar (the one on the righter
+            side shown on the picture below) click it and a pop window will appear
+            select your gallery from the combobox and then press insert. You
+            will have the set the template manually to display the simple
+            css skin for the gallery.<br>
+            Heres the code that should be inserted: <br>
+            <br>
+            <strong>[nggallery id=2 template=simple]</strong><br>
+            <br>
+          <img src="assets/images/nextGen-addPage.png" width="500" height="506"></li>
+          <li>Now you can add items to your filter bar adding custom fields in
+            this newly created page. For each filter you want to display add
+            a custom field with the same ame you used in the thumbnails remember
+            we used the winter and summer alt values.<br>
+          <img src="assets/images/nextGen-customFields.png" width="588" height="445"></li>
+          <li>Well thats all you need to have your gallery working check the
+            documentation from the official plug in for more customization <a href="http://wordpress.org/extend/plugins/nextgen-gallery/" target="_blank">here</a>.</li>
+        </ol>
+        <p>&nbsp;</p>
+        <hr>
+        <h1 id="videoPage"><strong>G) Setting Up a Video Gallery Page</strong> - <a href="#toc">top</a></h1>
+        <p>Its very easy to have different video galleries across your site just follow this steps:</p>
+        <p>1) First add some video categories a the &quot;video&gt;video categories&quot; tab.</p>
+        <p>2) Then you need to add video records at the &quot;videos&gt;add new&quot; tab. There enter the info for the video (title, excerpt, and url of the video). You need to set the url from the youtube or vimeo video.</p>
+        <p>3) Finally add a page form the &quot;pages&gt;add new&quot; tab set the template to &quot;Video Gallery&quot; add a &quot;Feature image&quot; for the thumbnail and set a custom field named as shown below &quot;category&quot; and there enter the category you want to display. Remember we set the category at step 1. Thats all.</p>
+        <p><img src="assets/images/video-customfield.png" width="758" height="154"></p>
+        <p>&nbsp;</p>
+        <h1 id="portfolio"><strong>H) Setting Up the Portfolio</strong> - <a href="#toc">top</a></h1>
+      <p>Follow this easy steps:</p>
+        <ol>
+          <li>Click on the portfolios tab in the admin panel.</li>
+          <li>Add new entry as you would with a post entry</li>
+          <li>Go to the portfolio tab under the simple settings tab and set the
+            configuration as you like</li>
+          <li>Set the link in you menu under the &quot;appearance &gt; menus&quot; tab and
+            add a custom link with a URL value of &quot;http://localhost:8888/wordpress/<strong>portfolios</strong>&quot;
+            where &quot;http://localhost:8888/wordpress/&quot; is your word press base
+            url installation dont forget to set a label named as you like. Thats
+            it.</li>
+        </ol>
+        <h1 id="portfolio2">&nbsp;</h1>
+        <h1><strong>I) Setting Up the Archives</strong> - <a href="#toc">top</a></h1>
+        <p>Follow this easy steps:</p>
+        <ol>
+          <li>Add a new page and name whatever you want. For example archives.</li>
+          <li>Set the template of the page to archives</li>
+          <li>Go to the archives settings under the Simple tab in the admin panel</li>
+          <li>Configure what to list from the archives settings</li>
+        </ol>
+        <p>&nbsp;</p>
+      <h1>&nbsp;</h1>
+      <p>&nbsp;</p>
+        <h1><strong>K) CSS Files and Structure</strong> - <a href="#toc">top</a></h1>
+        <p>This theme has only one css customizable in the wordpress editor,
+          i dont recommend doing so instead edit the file inside css folder named
+          styles.css.</p>
+	  <h2><strong>File structure:</strong></h2>
+		<ul>
+		  <li>	      style.css (the theme css it imports all necesary css files)</li>
+          <li>css (folder)
+		    <ul>
+		      <li>ie-hacks.css (use it to fix I.E 6 bugs)</li>
+		      <li>ie7-hacks.css (use it to fix I.E 7 bugs)</li>
+		      <li>ie8-hacks.css (use it to fix I.E 8 bugs)</li>
+		      <li>content-black.css (used for the background of the conten, same for
+		        the content-blue..white)</li>
+		      <li>jquery.tabs-ie.css</li>
+		      <li>jquery.tabs.css</li>
+		      <li>reset.css (resets and initializes the css)</li>
+		      <li>social-icons.css (clasess for the social icons at the bottom)</li>
+		      <li>style.css (main style sheet)</li>
+		      <li>superfish-custom.css</li>
+		    </ul>
+          </li>
+	  </ul>
+	  <p>&nbsp;</p>
+    <hr>
+		
+		<h1 id="javascript"><strong>L) JavaScript</strong> - <a href="#toc">top</a></h1>
+	    <p>You can control almost all the config for the javaascript functionality
+	      inside the <strong>&quot;js/custom.js</strong>&quot; file.</p>
+	    <h2>JS FILES LIST</h2>
+	    <ol>
+          <li><strong>jQuery</strong> is a Javascript library that greatly reduces
+            the amount of code that you must write.</li>
+	      <li> <strong>Cufón</strong> aims to become a worthy alternative to sIFR,
+	        which despite its merits still remains painfully tricky to set up and
+	        use<a href="http://cufon.shoqolate.com/generate/" target="_blank">. </a></li>
+	      <li><strong>PrettyPhoto</strong> is a jQuery based lightbox clone. Not
+	        only does it support images, it also add support for videos, flash,
+	        YouTube, iFrames. It’s a full blown media lightbox. The setup is easy
+	        and quick, plus the script is compatible in every major browser.</li>
+	      <li><strong>DD_belatedPNG</strong> This is a Javascript library that sandwiches
+	        PNG image support into IE6 without much fuss.</li>
+	      <li><strong>filterable.pack.js </strong>This plug in allows you to filter
+	        the thumbnails content</li>
+	      <li><strong>jquery_cycle</strong> TThe jQuery Cycle Plugin is a slideshow
+	        plugin that supports many different types of transition effects. It
+	        supports pause-on-hover, auto-stop, auto-fit, before/after callbacks,
+	        click triggers and much more. It also supports, but does not require,
+	        the Metadata Plugin and the Easing Plugin.</li>
+	      <li><strong>Jquery cycle</strong> <strong>all</strong> see above.</li>
+	      <li><strong>jqueryui</strong> provides abstractions for low-level interaction
+	        and animation, advanced effects and high-level, themeable widgets, built
+	        on top of the jQuery JavaScript Library, that you can use to build highly
+	        interactive web applications.</li>
+	      <li><strong>jQuery Easing Plugin</strong> A jQuery plugin from GSGD to
+	        give advanced easing options.</li>
+	      <li><strong>Superfish</strong> Query plugin that takes an existing pure
+	        CSS drop-down menu.</li>
+	      <li><strong>Twitter</strong> feedback to the top of your site</li>
+      </ol>
+      <h6>&nbsp;</h6>
+	  <h2>FONT FILES</h2>
+	    <p>This theme uses cufon replacement for the headers and other titles.
+	        You can change the font-family at the appearance menu inside the
+	        wp-admin or you can set your own cufon font<strong>.</strong> Some of the fonts
+	        may not contain all the special characters.</p>
+	    <p><strong>Available font-faces</strong></p>
+	    <ol>
+	      <li><a href="http://www.fontsquirrel.com/fonts/bebas-neue">bebas-neue.font.js</a></li>
+          <li><a href="http://www.fontsquirrel.com/fonts/ChunkFive">chunkfive.font.js</a></li>
+          <li><a href="http://www.fontsquirrel.com/fonts/Daniel">daniel.font.js</a></li>
+          <li><a href="http://www.fontsquirrel.com/fonts/Quicksand">quicksand-bold.font.js</a></li>
+          <li><a href="http://www.fontsquirrel.com/fonts/Quicksand">quicksand.font.js</a></li>
+          <li><a href="http://www.fontsquirrel.com/fonts/Sansation">sansation.font.js</a></li>
+      </ol>
+      <h5>&nbsp;</h5>
+<hr>
+		
+		<h1>M) PSD Files - <a href="#toc">top</a></h1>
+	  <p>I've included 2 psd files in this theme all of them are editable:</p>
+		<ol>
+          <li>Sprites.psd<br>
+              <span class="alt">It contains all the graphic elements of the theme</span></li>
+		  <li>bird.psd</li>
+	      <li>main.psd<br>
+          <span class="alt">General layout</span></li>
+	      <li>over.psd</li>
+      </ol>
+	  <h3 id="psdFiles">&nbsp;</h3>
+		
+    <hr>
+		
+		<h1 id="credits">N) Sources and Credits - <a href="#toc">top</a></h1>
+	  <p>I've used the following images, icons or other files as listed.        
+	  <h3>JAVASCRIPT </h3>
+	  <ul>
+	    <li>jQuery <a href="http://jquery.com/" target="_blank">http://jquery.com/</a></li>
+	    <li>jqueryui .<a href="http://jqueryui.com/"> Jquery ui Home page.</a></li>
+	    <li>jQuery Easing Plugin <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+	    <li>jquery_cycle <a href="http://jquery.malsup.com/cycle/" target="_blank">http://jquery.malsup.com/cycle/</a></li>
+	    <li>Jquery tabs <a href="http://stilbuero.de/tabs/">http://stilbuero.de/tabs/</a></li>
+	    <li>filterable.pack.js <a href="http://www.gethifi.com/blog/a-jquery-plugin-to-create-an-interactive-filterable-portfolio-like-ours" target="_blank"> http://www.gethifi.com/blog/a-jquery-plugin-to-create-an-interactive-filterable-portfolio-like-ours</a></li>
+	    <li>PrettyPhoto<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank"> http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></li>
+	    <li>Twitter feedback <a href="http://remysharp.com" target="_blank"> http://remysharp.com</a></li>
+	    <li>Jquery tools <a href="http://flowplayer.org/tools/">http://flowplayer.org/tools/</a></li>
+	    <li> Cufón <a href="http://cufon.shoqolate.com/generate/" target="_blank">http://cufon.shoqolate.com/generate/</a></li>
+	    <li>DD_belatedPNG <a href="http://www.dillerdesign.com/experiment/DD_belatedPNG/" target="_blank">http://www.dillerdesign.com/experiment/DD_belatedPNG/</a></li>
+	    <li>Bebas font <a href="http://www.fontsquirrel.com/fonts/bebas" target="_blank">http://www.fontsquirrel.com/fonts/bebas</a></li>
+	    <li>Superfish <a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">http://users.tpg.com.au/j_birch/plugins/superfish/</a></li>
+      </ul>
+	  <h3>IMAGES</h3>
+	  <ul>
+        <li>Image assets used<a href="http://themeforest.net/page/asset_library" target="_blank"> http://themeforest.net/page/asset_library</a></li>
+	    <li>Social icons by Komodo media <a href="http://www.komodomedia.com/download/" target="_blank"> http://www.komodomedia.com/download/</a></li>
+	    <li>Knobs icons <a href="http://itweek.deviantart.com/art/Knob-Buttons-Toolbar-icons-73463960">http://itweek.deviantart.com/art/Knob-Buttons-Toolbar-icons-73463960</a></li>
+	    <li>Background images <a href="http://www.squidfingers.com/patterns/" target="_blank">http://www.squidfingers.com/patterns/</a></li>
+        <li>Webtreats Background images <a href="http://webtreats.mysitemyway.com/" target="_blank">http://webtreats.mysitemyway.com/</a></li>
+	  </ul>
+      <h3>PHP</h3>
+      <ul>
+        <li>Smarter custom types <a href="http://somadesign.ca/projects/smarter-custom-post-types/" target="_blank">http://somadesign.ca/projects/smarter-custom-post-types/</a>        </li>
+      </ul>
+      <h3>Fonts</h3>
+      <ul>
+        <li><a href="http://www.fontsquirrel.com/fonts/bebas-neue">bebas-neue.font.js</a></li>
+        <li><a href="http://www.fontsquirrel.com/fonts/ChunkFive">chunkfive.font.js</a></li>
+        <li><a href="http://www.fontsquirrel.com/fonts/Daniel">daniel.font.js</a></li>
+        <li><a href="http://www.fontsquirrel.com/fonts/Quicksand">quicksand-bold.font.js</a></li>
+        <li><a href="http://www.fontsquirrel.com/fonts/Quicksand">quicksand.font.js</a></li>
+        <li><a href="http://www.fontsquirrel.com/fonts/Sansation">sansation.font.js</a></li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+  <hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Luis Zuno</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

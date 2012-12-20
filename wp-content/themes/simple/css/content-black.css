@@ -1,0 +1,33 @@
+body {
+	color: #f1f1f1;
+	background: #000000;
+}
+
+/* TITLE ------------------------------------------------------------*/
+
+.title-holder{
+	background: url(../img/title-bg-black.png) no-repeat ;
+}
+
+/* SLIDESHOW ------------------------------------------------------------*/
+
+#slideshow{
+	background: url(../img/slideshow-bg-black.png) no-repeat;
+}
+
+/* SOCIAL BAR ------------------------------------------------------------*/
+
+#social-bar{
+	background: url(../img/social-bg-black.png) no-repeat;
+}
+
+/* BORDERS ------------------------------------------------------------*/
+
+#header,
+#home-header{
+	border-bottom: 1px solid #606060;
+}
+
+#footer{
+	border-top: 1px solid #606060;
+}
